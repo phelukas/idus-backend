@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "users",
     "workpoints",
     "corsheaders",
+    "drf_spectacular"
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,7 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
     ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 SIMPLE_JWT = {
@@ -149,3 +151,13 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 LANGUAGE_CODE = "pt-br"
+
+SWAGGER_SETTINGS = {
+    "SECURITY_DEFINITIONS": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+        }
+    }
+}
