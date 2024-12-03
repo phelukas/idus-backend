@@ -387,3 +387,4 @@ O diagrama abaixo reflete a arquitetura de dados aplicada ao projeto:
 ![Diagrama de Entidade/Relacionamento](docs/diagrama.svg)
 
 # idus-backend
+# idus-backend
