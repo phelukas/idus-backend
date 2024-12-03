@@ -379,4 +379,10 @@ A documentação completa da API, gerada automaticamente pelo **DRF Spectacular*
 - **utils.py**: Contém funções utilitárias usadas pelo aplicativo `workpoints`.
 - **views.py**: Lida com a lógica de requisições e respostas para `workpoints`.
 
-Adicione este conteúdo no seu README.md, ajustando conforme necessário.
+
+## Diagrama de Entidade/Relacionamento (DER)
+
+O diagrama abaixo reflete a arquitetura de dados aplicada ao projeto:
+
+![Diagrama de Entidade/Relacionamento](docs/diagrama.svg)
+
